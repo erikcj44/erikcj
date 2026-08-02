@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>erikcj</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Poppins,sans-serif;background:#080808;color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at center,rgba(255,255,255,.05),transparent 45%),#080808;z-index:-3}
+.stars,.stars:before{content:"";position:fixed;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:140px 140px;opacity:.08;animation:drift 90s linear infinite;z-index:-2}.stars:before{opacity:.04;animation-duration:150s}
+@keyframes drift{to{transform:translateY(120px)}}
+.glass{background:rgba(255,255,255,.04);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+header{position:fixed;top:22px;left:50%;transform:translateX(-50%);width:min(1100px,92%);padding:18px 28px;border-radius:18px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-family:'Space Grotesk',sans-serif;font-size:1.2rem;font-weight:700;letter-spacing:8px;text-transform:uppercase;transition:.3s}
+nav a{text-decoration:none;color:#d4d4d4;margin-left:26px;position:relative}
+header h1:hover{letter-spacing:10px}nav a:after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:#fff;transition:.3s}nav a:hover:after{width:100%}
+.hero{min-height:100vh;display:grid;place-items:center;padding:120px 20px 60px;text-align:center}
+.hero h2{font-size:4.5rem;font-weight:700}.hero p{max-width:650px;margin:18px auto 40px;color:#a3a3a3;line-height:1.8}
+.player{max-width:900px;padding:18px;border-radius:24px;margin:auto}.label{text-align:left;color:#bfbfbf;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+video{width:100%;display:block;border-radius:16px;background:#000}
+.contact{padding:90px 20px}.card{max-width:520px;margin:auto;padding:36px;border-radius:22px;text-align:center}.card p{margin:14px 0;color:#d4d4d4}.card a{color:#fff;text-decoration:none}
+footer{padding:40px;text-align:center;color:#777;border-top:1px solid rgba(255,255,255,.06);margin-top:70px}
+@media(max-width:768px){header{flex-direction:column;gap:12px}.hero h2{font-size:2.8rem}}
+</style></head><body><div class='stars'></div>
+<header class='glass'><h1>ERIKCJ</h1><nav><a href='#'>Home</a><a href='#video'>Videos</a><a href='#contact'>Contact</a></nav></header>
+<section class='hero'><div><h2>Create. Edit. Inspire.</h2><p>A minimalist portfolio focused on cinematic edits and creative work.</p><div id='video' class='player glass'><div class='label'>Featured Video</div><video controls autoplay muted loop><source src='promo.mp4' type='video/mp4'></video></div></div></section>
+<section id='contact' class='contact'><div class='card glass'><h2>Contact</h2><p><a href='tel:+16693386856'>(669) 338-6856</a></p><p><a href='mailto:erikjastrebski@icloud.com'>erikjastrebski@icloud.com</a></p></div></section>
+<footer>© 2026 ERIKCJ</footer></body></html>
